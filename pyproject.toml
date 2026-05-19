@@ -1,0 +1,67 @@
+[project]
+name = "agentlantern"
+version = "0.1.19"
+description = "Devtool to document and inspect LLM agent systems."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Brell Sanwouo", email = "ia@novalitix.com"},
+]
+keywords = ["llm", "agents", "crewai", "documentation", "devtools", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pyyaml>=6.0.0",
+    "websockets>=12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/brellsanwouo/agentlantern"
+Repository = "https://github.com/brellsanwouo/agentlantern"
+Issues = "https://github.com/brellsanwouo/agentlantern/issues"
+
+[project.scripts]
+lantern = "agentlantern.cli:main"
+agentlantern = "agentlantern.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "/src",
+    "/README.md",
+    "/USAGE.md",
+    "/LICENSE",
+    "/pyproject.toml",
+]
+exclude = [
+    "/test",
+    "/tests",
+    "/vscode-extension",
+    "/node_modules",
+    "/docs/.vitepress/cache",
+    "/docs/.vitepress/dist",
+    "/.lantern_replays",
+    "/.venv",
+    "/dist",
+    "/build",
+    "/.claude",
+    "*.env",
+    "*.pem",
+    "*.key",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agentlantern"]

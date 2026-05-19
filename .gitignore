@@ -1,0 +1,39 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+dist/
+build/
+
+# Local runs and generated project outputs
+.lantern_replays/
+report.md
+
+# JavaScript docs tooling
+node_modules/
+docs/.vitepress/.temp/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# Local-only projects and extension artifacts
+.github/
+test/
+tests/
+vscode-extension/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+.claude/
+
+# Internal notes
+AgentLantern_ideas.md
