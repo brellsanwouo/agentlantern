@@ -23,7 +23,6 @@ docs/.vitepress/cache/
 docs/.vitepress/dist/
 
 # Local-only projects and extension artifacts
-.github/
 test/
 tests/
 vscode-extension/
