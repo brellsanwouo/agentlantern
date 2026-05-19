@@ -1,10 +1,20 @@
 # AgentLantern
 
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-docs-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![HTML](https://img.shields.io/badge/HTML-play%20UI-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS-interface-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![VitePress](https://img.shields.io/badge/VitePress-docs-646CFF?logo=vite&logoColor=white)](https://vitepress.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1.19-3841fc)](https://github.com/brellsanwouo/agentlantern/releases/tag/v0.1.19)
+
 **GitHub:** https://github.com/brellsanwouo/agentlantern
 
 AgentLantern is a CLI devtool that automatically documents multi-agent LLM systems and lets you watch them run live.
 
 Point it at an agent project — it detects the framework, parses the architecture, and generates a browsable documentation site. For supported frameworks it also opens a live animated playground while the crew executes.
+
+![AgentLantern Play UI showing five AI agents, thought bubbles, and a central Tool Hub](docs/assets/agentlantern-play-screenshot.jpeg)
 
 ## Install
 
