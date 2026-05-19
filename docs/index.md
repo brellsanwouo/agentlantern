@@ -56,9 +56,9 @@ features:
 ## Fast Start
 
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 # or
-uv tool install agentlantern
+uv tool install git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ```bash

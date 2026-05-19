@@ -71,7 +71,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install agentlantern
+      - run: pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
       - run: lantern docs
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -89,7 +89,7 @@ crewai create my_test_project
 cd my_test_project
 
 # 2. Generate documentation
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 lantern docs
 
 # 3. Browse it

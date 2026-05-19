@@ -40,7 +40,7 @@ Example:
 ```yaml
 - name: AgentLantern lint
   run: |
-    pip install agentlantern
+    pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
     lantern lint --json --strict my-agent-project/ | tee lint-results.json
 ```
 

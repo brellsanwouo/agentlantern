@@ -7,13 +7,13 @@
 ## Install
 
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 ```
 
 Or with `uv` (recommended):
 
 ```bash
-uv tool install agentlantern
+uv tool install git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ## Verify
@@ -38,9 +38,9 @@ AgentLantern automatically detects the framework — no extra dependencies to in
 ## Update
 
 ```bash
-pip install --upgrade agentlantern
+pip install --upgrade "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 # or
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ## Uninstall
@@ -65,7 +65,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ```bash
 which lantern   # should point to ~/.local/bin/lantern
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ## Next Steps

@@ -140,7 +140,7 @@ class MyTestProjectCrew:
 ## Step 6: Install AgentLantern
 
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 ```
 
 ## Step 7: Generate Documentation

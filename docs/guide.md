@@ -71,9 +71,9 @@ Framework detection is automatic — no configuration needed.
 ## Installation
 
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 # or (recommended)
-uv tool install agentlantern
+uv tool install git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 Verify:

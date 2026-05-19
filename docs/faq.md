@@ -37,17 +37,17 @@ Python 3.11 or higher.
 ### How do I install AgentLantern?
 
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 # or
-uv tool install agentlantern
+uv tool install git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ### How do I update?
 
 ```bash
-pip install --upgrade agentlantern
+pip install --upgrade "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 # or
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ### `lantern` command not found after install
@@ -68,7 +68,7 @@ which lantern
 If it points to an old version (e.g. `~/.local/share/uv/tools/agentlantern/`), reinstall:
 
 ```bash
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 ## Usage
@@ -166,7 +166,7 @@ Check that `pyproject.toml` lists a supported framework in `[project] dependenci
 
 ### `FileNotFoundError: Could not find crew.py`
 
-You are running an old version of `lantern`. Update with `uv tool install agentlantern --force`.
+You are running an old version of `lantern`. Update with `uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git`.
 
 ### Documentation content is empty
 
@@ -189,7 +189,7 @@ http://127.0.0.1:8791?ws=8790
 If the UI still appears stale, close the tab and reopen the printed URL. If installed with `uv tool`, refresh the command:
 
 ```bash
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 When developing AgentLantern from a local checkout:

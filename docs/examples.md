@@ -75,7 +75,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.11'
-      - run: pip install agentlantern
+      - run: pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
       - run: lantern docs
       - uses: actions/upload-artifact@v2
         with:
@@ -114,7 +114,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install agentlantern
+RUN pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 
 RUN lantern docs
 

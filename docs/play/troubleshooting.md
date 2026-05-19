@@ -25,7 +25,7 @@ An already-open tab can keep old JavaScript in memory. Close the tab and reopen 
 If installed with `uv tool`:
 
 ```bash
-uv tool install agentlantern --force
+uv tool install --force git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 When developing from a local checkout:

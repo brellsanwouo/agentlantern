@@ -10,12 +10,12 @@ Point it at an agent project — it detects the framework, parses the architectu
 
 **With pip:**
 ```bash
-pip install agentlantern
+pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
 ```
 
 **With uv (recommended — installs the `lantern` command globally):**
 ```bash
-uv tool install agentlantern
+uv tool install git+https://github.com/brellsanwouo/agentlantern.git
 ```
 
 **From source:**
