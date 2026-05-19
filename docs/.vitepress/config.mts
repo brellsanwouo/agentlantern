@@ -22,7 +22,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: "/assets/logo.png",
+    logo: "assets/logo.png",
     siteTitle: "AgentLantern",
     nav: [
       { text: "Guide", link: "/guide" },

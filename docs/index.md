@@ -6,7 +6,7 @@ hero:
   text: Developer tools for AI agent projects
   tagline: Generate clean architecture docs, lint agent design, inspect project structure, and watch supported agent runs in a live animated playground.
   image:
-    src: /assets/logo.png
+    src: ./assets/logo.png
     alt: AgentLantern logo
   actions:
     - theme: brand
@@ -29,7 +29,7 @@ features:
 ---
 
 <div class="agentlantern-hero-mark">
-  <img src="/assets/logo-horizontal.png" alt="AgentLantern" />
+  <img src="./assets/logo-horizontal.png" alt="AgentLantern" />
 </div>
 
 <div class="agentlantern-pill-row">
