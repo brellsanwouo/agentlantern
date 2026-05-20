@@ -62,6 +62,7 @@ Replays a saved `lantern play --name` run.
 
 ```bash
 lantern replay demo-run
+lantern replay last
 lantern replay demo-run --speed 2.0
 lantern replay /path/to/.lantern_replays/demo-run.jsonl
 ```

@@ -63,7 +63,7 @@ lantern lint path/to/your-project
 | `lantern lint [project] [--strict] [--json]` | Static analysis — no LLM, no network |
 | `lantern inspect [project]` | Output project model as JSON |
 | `lantern play [project] [--name NAME]` | Live animated playground; if `--name` is omitted, the UI asks for a run name |
-| `lantern replay NAME [--speed N]` | Replay a saved run |
+| `lantern replay NAME [--speed N]` | Replay a saved run; use `last` for the newest saved replay |
 
 ## Supported Frameworks
 
@@ -104,7 +104,7 @@ Detection is automatic — no configuration needed.
 - Timeline, Thoughts, Tools, Comms, and Log panels
 - Clickable agents with full per-agent history
 - Final report display on completion
-- **Replay** — save a run with `--name my-run` and replay it anytime with `lantern replay my-run`
+- **Replay** — save a run with `--name my-run`, replay it with `lantern replay my-run`, or open the newest saved run with `lantern replay last`
 
 ## Linter
 

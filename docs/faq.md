@@ -200,6 +200,7 @@ Check the **Log** panel and the terminal running `lantern play`. The target proj
 ```bash
 lantern play /path/to/project --name demo-run
 lantern replay demo-run
+lantern replay last
 ```
 
 Saved runs are written to `.lantern_replays/<name>.jsonl` in the target project.

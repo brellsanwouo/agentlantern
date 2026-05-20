@@ -11,6 +11,21 @@ from agentlantern.lint import run_lint
 from agentlantern.web import serve_docs
 
 
+def _latest_replay_path(replays_dir: Path = Path(".lantern_replays")) -> Path:
+    """Return the newest replay in the current project's replay directory."""
+    replays = [
+        path
+        for path in replays_dir.glob("*.jsonl")
+        if path.is_file()
+    ]
+    if not replays:
+        print(f"\n  Error: no saved replay found in {replays_dir}/")
+        print("  Run 'lantern play' first, enter a replay name, then click START.")
+        print()
+        sys.exit(1)
+    return max(replays, key=lambda path: (path.stat().st_mtime, path.name))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="lantern",
@@ -119,7 +134,8 @@ def build_parser() -> argparse.ArgumentParser:
         "name",
         help=(
             "Replay name (looks for .lantern_replays/<name>.jsonl in cwd) "
-            "or a direct path to a .jsonl file."
+            "or a direct path to a .jsonl file. Use 'last' to replay the "
+            "newest saved run."
         ),
     )
     replay_parser.add_argument(
@@ -179,8 +195,12 @@ def main() -> None:
     elif args.command == "replay":
         from agentlantern.play import run_replay
         name = args.name
-        replay_path = Path(name)
-        if not replay_path.exists():
+        if name == "last":
+            replay_path = _latest_replay_path()
+            print(f"Replaying latest saved run: {replay_path}")
+        else:
+            replay_path = Path(name)
+        if name != "last" and not replay_path.exists():
             # Look for it in .lantern_replays/<name>.jsonl relative to cwd
             candidate = Path(".lantern_replays") / f"{name}.jsonl"
             if not candidate.exists():

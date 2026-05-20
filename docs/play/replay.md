@@ -26,6 +26,16 @@ From the same project root:
 lantern replay demo-run
 ```
 
+## Replay the Latest Run
+
+From the same project root:
+
+```bash
+lantern replay last
+```
+
+`last` selects the newest `.jsonl` file in `.lantern_replays/`.
+
 ## Replay by Path
 
 ```bash

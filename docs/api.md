@@ -97,7 +97,7 @@ lantern replay NAME [OPTIONS]
 ```
 
 **Arguments:**
-- `NAME` - Replay name from `.lantern_replays/<name>.jsonl` or a direct `.jsonl` path
+- `NAME` - Replay name from `.lantern_replays/<name>.jsonl`, a direct `.jsonl` path, or `last` for the newest saved replay
 
 **Options:**
 - `--speed FLOAT` (default: 1.0) - Playback speed multiplier
@@ -108,6 +108,7 @@ lantern replay NAME [OPTIONS]
 **Example:**
 ```bash
 lantern replay demo-run
+lantern replay last
 lantern replay demo-run --speed 2.0
 lantern replay /path/to/.lantern_replays/demo-run.jsonl
 ```

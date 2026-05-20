@@ -56,6 +56,9 @@ lantern play /path/to/project --name demo-run
 
 # Later, replay the saved run
 lantern replay demo-run
+
+# Or replay the newest saved run
+lantern replay last
 ```
 
 From inside the project root, this is enough:
@@ -63,6 +66,7 @@ From inside the project root, this is enough:
 ```bash
 lantern play
 lantern replay demo-run
+lantern replay last
 ```
 
 When `lantern play` starts without `--name`, the UI asks for a run name before **START** and saves the replay with that name. `lantern replay` then opens the same pixel-art world with replay controls: pause, seek, speed, restart, and stop.

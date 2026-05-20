@@ -94,6 +94,7 @@ Pour sauvegarder et rejouer un run :
 ```bash
 lantern play /chemin/vers/votre-projet --name demo-run
 lantern replay demo-run
+lantern replay last
 ```
 
 ## Ce qui est généré
@@ -177,7 +178,7 @@ Rejoue un run sauvegardé par `lantern play --name`.
 
 | Argument / Option | Description |
 | --- | --- |
-| `NAME` | Nom du replay ou chemin direct vers un fichier `.jsonl` |
+| `NAME` | Nom du replay, chemin direct vers un fichier `.jsonl`, ou `last` pour le dernier replay sauvegardé |
 | `--speed FLOAT` | Vitesse de lecture (défaut : `1.0`) |
 | `--ws-port PORT` | Port WebSocket (défaut : `7890`) |
 | `--http-port PORT` | Port HTTP (défaut : `7891`) |

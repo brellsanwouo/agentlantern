@@ -1,6 +1,6 @@
 [project]
 name = "agentlantern"
-version = "0.1.20"
+version = "0.1.21"
 description = "Devtool to document and inspect LLM agent systems."
 readme = "README.md"
 license = {text = "MIT"}

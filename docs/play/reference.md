@@ -21,7 +21,7 @@ lantern replay NAME [--speed FLOAT] [--ws-port PORT] [--http-port PORT]
 
 | Option | Default | Description |
 | --- | --- | --- |
-| `NAME` | required | Replay name or direct `.jsonl` path |
+| `NAME` | required | Replay name, direct `.jsonl` path, or `last` for the newest saved replay |
 | `--speed` | `1.0` | Playback speed multiplier |
 | `--ws-port` | `7890` | WebSocket port for replay events |
 | `--http-port` | `7891` | HTTP port for the replay UI |
