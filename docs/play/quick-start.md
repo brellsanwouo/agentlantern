@@ -16,7 +16,7 @@ lantern play /path/to/my-agent-project
 
 AgentLantern prints the local Play UI URL. Open that URL in your browser.
 
-The default ports are documented in the [command reference](reference.md), but you do not need to pass them for a normal run.
+By default, the Play UI runs on `http://127.0.0.1:7891` and the WebSocket event stream runs on `ws://127.0.0.1:7890`.
 
 ## Run the Crew
 

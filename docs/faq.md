@@ -85,10 +85,8 @@ lantern docs
 
 ```bash
 lantern web /path/to/your-agent-project
-# Open https://localhost:9000
+# Open http://localhost:9000
 ```
-
-To preview AgentLantern's own documentation site while contributing to this repository, use [Run This Docs Site](local-docs.md). Do not use `lantern web` for the product docs site; `lantern web` is for generated documentation of an agent project.
 
 ### How do I watch a crew run live?
 

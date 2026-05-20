@@ -34,7 +34,7 @@ lantern docs  # Uses current directory
 
 ### lantern web
 
-Generate and serve an agent project's documentation over HTTPS.
+Generate and serve an agent project's documentation over local HTTP.
 
 ```bash
 lantern web [PROJECT_PATH] [OPTIONS]

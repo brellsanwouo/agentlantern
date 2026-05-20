@@ -8,7 +8,7 @@ lantern play [project] [--ws-port PORT] [--http-port PORT] [--name NAME]
 
 | Option | Default | Description |
 | --- | --- | --- |
-| `project` | `.` | Agent project to run |
+| `project` | current directory | Agent project to run |
 | `--ws-port` | `7890` | WebSocket port for live events |
 | `--http-port` | `7891` | HTTP port for the Play UI |
 | `--name` | empty | Save the run as `.lantern_replays/<name>.jsonl` and auto-start. If omitted, the UI asks for the run name before START |

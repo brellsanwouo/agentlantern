@@ -6,7 +6,7 @@
 [![CSS](https://img.shields.io/badge/CSS-interface-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![VitePress](https://img.shields.io/badge/VitePress-docs-646CFF?logo=vite&logoColor=white)](https://vitepress.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.19-3841fc)](https://github.com/brellsanwouo/agentlantern/releases/tag/v0.1.19)
+[![Version](https://img.shields.io/badge/version-0.1.20-3841fc)](https://github.com/brellsanwouo/agentlantern/releases/tag/v0.1.20)
 
 **GitHub:** https://github.com/brellsanwouo/agentlantern
 
@@ -41,10 +41,8 @@ Requires Python 3.11+.
 ## Quick Start
 
 ```bash
-# Generate and browse documentation for your agent project (served over HTTPS)
+# Generate and browse documentation for your agent project
 lantern web path/to/your-project
-
-# A self-signed certificate is generated once in ~/.agentlantern/ssl/ — accept the browser warning on first visit.
 
 # Watch a CrewAI run live in the animated playground
 lantern play path/to/your-project
@@ -61,7 +59,7 @@ lantern lint path/to/your-project
 | Command | Description |
 | --- | --- |
 | `lantern docs [project] [-o DIR]` | Generate Markdown documentation |
-| `lantern web [project] [--port PORT]` | Generate and serve project docs over HTTPS on `0.0.0.0:9000` by default |
+| `lantern web [project] [--port PORT]` | Generate and serve project docs over local HTTP on `0.0.0.0:9000` by default |
 | `lantern lint [project] [--strict] [--json]` | Static analysis — no LLM, no network |
 | `lantern inspect [project]` | Output project model as JSON |
 | `lantern play [project] [--name NAME]` | Live animated playground; if `--name` is omitted, the UI asks for a run name |

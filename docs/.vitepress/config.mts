@@ -35,7 +35,6 @@ export default defineConfig({
         items: [
           { text: "Overview", link: "/guide" },
           { text: "Installation", link: "/installation" },
-          { text: "Run This Docs Site", link: "/local-docs" },
           { text: "Usage Guide", link: "/usage" },
         ],
       },

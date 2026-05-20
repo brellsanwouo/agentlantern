@@ -50,7 +50,7 @@ All files are written to `<project>/docs/` by default.
 
 | Method | How |
 |--------|-----|
-| **Local** | `lantern web` → open `https://localhost:9000` |
+| **Local** | `lantern web` → open `http://localhost:9000` |
 | **Single file** | Send `docs/agentlantern-docs.html` — self-contained, works offline |
 | **GitHub Pages** | Push `docs/` and enable Pages in repository settings |
 | **Any web server** | `docs/` is a static site — works on Nginx, Vercel, Netlify |
@@ -94,7 +94,7 @@ lantern docs
 
 # 3. Browse it
 lantern web
-# → https://localhost:9000
+# → http://localhost:9000
 ```
 
 ## Supported Frameworks

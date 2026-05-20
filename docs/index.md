@@ -32,11 +32,11 @@ features:
   <img src="./assets/logo-horizontal.png" alt="AgentLantern" />
 </div>
 
-<div class="agentlantern-pill-row">
+<!-- <div class="agentlantern-pill-row">
   <span class="agentlantern-pill">Multi-framework direction</span>
   <span class="agentlantern-pill">CrewAI deep support today</span>
-  <span class="agentlantern-pill">GitHub Pages ready</span>
-</div>
+  <span class="agentlantern-pill">VitePress + GitHub Pages ready</span>
+</div> -->
 
 <div class="agentlantern-command-grid">
   <div class="agentlantern-command">
@@ -66,3 +66,7 @@ lantern web /path/to/my-agent-project
 lantern lint /path/to/my-agent-project
 lantern play /path/to/my-agent-project
 ```
+
+## Documentation Development
+
+This documentation site uses [VitePress](https://vitepress.dev/).

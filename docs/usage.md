@@ -84,7 +84,7 @@ lantern docs /path/to/my-agent-project -o /path/to/output
 
 ### `lantern web [project]`
 
-Generates (unless `--no-generate`) and serves the documentation for an agent project over HTTPS.
+Generates (unless `--no-generate`) and serves the documentation for an agent project over local HTTP.
 
 ```bash
 # From the project root
@@ -104,9 +104,7 @@ lantern web --no-generate
 lantern web --host 0.0.0.0
 ```
 
-By default, `lantern web` serves `https://localhost:9000` and creates a self-signed certificate in `~/.agentlantern/ssl/` the first time it runs.
-
-To preview AgentLantern's own product docs while contributing to this repository, use [Run This Docs Site](local-docs.md) instead.
+By default, `lantern web` serves `http://localhost:9000` over local HTTP, so the browser should not show a certificate warning.
 
 ## Supported Frameworks
 
@@ -148,7 +146,7 @@ cd my-agent-project
 # 2. Generate and view documentation
 lantern web
 
-# 3. Open https://localhost:9000
+# 3. Open http://localhost:9000
 # 4. Press Ctrl+C to stop the server
 ```
 
