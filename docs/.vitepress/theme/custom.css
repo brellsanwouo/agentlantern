@@ -107,6 +107,31 @@
   font-weight: 650;
 }
 
+.agentlantern-version-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin: -8px 0 24px;
+}
+
+.agentlantern-version-strip a {
+  padding: 7px 11px;
+  border: 1px solid rgba(56, 65, 252, 0.28);
+  border-radius: 999px;
+  background: rgba(56, 65, 252, 0.1);
+  color: #3841fc;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
+.agentlantern-version-strip span {
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 650;
+}
+
 .agentlantern-frameworks {
   margin: 22px 0 30px;
 }

@@ -6,7 +6,7 @@
 [![CSS](https://img.shields.io/badge/CSS-interface-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![VitePress](https://img.shields.io/badge/VitePress-docs-646CFF?logo=vite&logoColor=white)](https://vitepress.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.20-3841fc)](https://github.com/brellsanwouo/agentlantern/releases/tag/v0.1.20)
+[![Version](https://img.shields.io/badge/version-0.1.21-3841fc)](https://github.com/brellsanwouo/agentlantern/releases)
 
 **GitHub:** https://github.com/brellsanwouo/agentlantern
 

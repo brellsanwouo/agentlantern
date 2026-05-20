@@ -32,6 +32,11 @@ features:
   <img src="./assets/logo-horizontal.png" alt="AgentLantern" />
 </div>
 
+<div class="agentlantern-version-strip">
+  <a href="./changelog">Current version: v0.1.21</a>
+  <span>CLI, Play, Replay, docs, and lint tooling</span>
+</div>
+
 <!-- <div class="agentlantern-pill-row">
   <span class="agentlantern-pill">Multi-framework direction</span>
   <span class="agentlantern-pill">CrewAI deep support today</span>

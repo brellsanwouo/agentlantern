@@ -1,6 +1,10 @@
 import { defineConfig } from "vitepress";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 
 const base = process.env.VITEPRESS_BASE ?? "/";
+const pyproject = readFileSync(resolve(__dirname, "../../pyproject.toml"), "utf-8");
+const version = pyproject.match(/^version = "([^"]+)"/m)?.[1] ?? "0.0.0";
 
 export default defineConfig({
   title: "AgentLantern",
@@ -28,6 +32,13 @@ export default defineConfig({
       { text: "Guide", link: "/guide" },
       { text: "CLI", link: "/usage" },
       { text: "Play", link: "/play" },
+      {
+        text: `v${version}`,
+        items: [
+          { text: "Changelog", link: "/changelog" },
+          { text: "GitHub Releases", link: "https://github.com/brellsanwouo/agentlantern/releases" },
+        ],
+      },
     ],
     sidebar: [
       {
@@ -73,6 +84,7 @@ export default defineConfig({
         text: "Reference",
         items: [
           { text: "CLI Reference", link: "/api" },
+          { text: "Changelog", link: "/changelog" },
           { text: "FAQ", link: "/faq" },
         ],
       },
