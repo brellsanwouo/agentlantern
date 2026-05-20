@@ -106,12 +106,7 @@ lantern web --host 0.0.0.0
 
 By default, `lantern web` serves `https://localhost:9000` and creates a self-signed certificate in `~/.agentlantern/ssl/` the first time it runs.
 
-To preview AgentLantern's own product docs in this repository, use [Run This Docs Site](local-docs.md) instead:
-
-```bash
-npm install
-npm run docs:dev
-```
+To preview AgentLantern's own product docs while contributing to this repository, use [Run This Docs Site](local-docs.md) instead.
 
 ## Supported Frameworks
 

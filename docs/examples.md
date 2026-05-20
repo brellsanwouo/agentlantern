@@ -41,20 +41,20 @@ View documentation for different projects on different ports:
 
 **Terminal 1:**
 ```bash
-lantern web ~/projects/project-a --port 8000
-# Visit http://localhost:8000
+lantern web ~/projects/project-a --port 9000
+# Visit http://localhost:9000
 ```
 
 **Terminal 2:**
 ```bash
-lantern web ~/projects/project-b --port 8001
-# Visit http://localhost:8001
+lantern web ~/projects/project-b --port 9001
+# Visit http://localhost:9001
 ```
 
 **Terminal 3:**
 ```bash
-lantern web ~/projects/project-c --port 8002
-# Visit http://localhost:8002
+lantern web ~/projects/project-c --port 9002
+# Visit http://localhost:9002
 ```
 
 ## Example 4: CI/CD Integration
@@ -118,13 +118,13 @@ RUN pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern
 
 RUN lantern docs
 
-CMD ["lantern", "web", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["lantern", "web", "--host", "0.0.0.0"]
 ```
 
 Build and run:
 ```bash
 docker build -t crew-docs .
-docker run -p 8000:8000 crew-docs
+docker run -p 9000:9000 crew-docs
 ```
 
 ## Example 7: Customize Port for Development
@@ -133,14 +133,14 @@ While developing, use different ports for different iterations:
 
 ```bash
 # First version
-lantern web --port 8000
+lantern web --port 9000
 
 # Make changes to crew.py
 # Regenerate docs
 lantern docs
 
 # View updated docs
-lantern web --port 8001
+lantern web --port 9001
 ```
 
 ## Example 8: Share Static Documentation
@@ -179,15 +179,15 @@ lantern web
 git checkout feature/new-agents
 lantern docs
 
-# Review on port 8000
-lantern web --port 8000
+# Review on port 9000
+lantern web --port 9000
 
 # Switch to another branch
 git checkout main
 lantern docs
 
-# Review on port 8001
-lantern web --port 8001
+# Review on port 9001
+lantern web --port 9001
 
 # Compare both versions side-by-side
 ```
@@ -223,13 +223,13 @@ lantern docs
 lantern web
 ```
 
-### Problem: Port 8000 is busy
+### Problem: Port 9000 is busy
 
 Solution:
 ```bash
-lantern web --port 8001
-# Or find what's using 8000
-lsof -i :8000
+lantern web --port 9001
+# Or find what's using 9000
+lsof -i :9000
 ```
 
 ### Problem: Can't find project

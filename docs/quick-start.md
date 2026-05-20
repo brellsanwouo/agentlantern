@@ -166,7 +166,7 @@ Generated AgentLantern docs for my_test_project
 lantern web
 ```
 
-Open your browser to `http://localhost:8000` and explore:
+Open your browser to `http://localhost:9000` and explore:
 - **Agents** - See your three agents (Researcher, Writer, Analyst)
 - **Tasks** - See your three tasks with dependencies
 - **Architecture** - Visual overview of your crew

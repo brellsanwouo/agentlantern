@@ -14,14 +14,9 @@ From anywhere:
 lantern play /path/to/my-agent-project
 ```
 
-AgentLantern prints two local endpoints:
+AgentLantern prints the local Play UI URL. Open that URL in your browser.
 
-| Service | Default | Purpose |
-| --- | --- | --- |
-| HTTP UI | `http://127.0.0.1:7891` | Browser interface |
-| WebSocket | `ws://127.0.0.1:7890` | Live event stream |
-
-Open the printed HTTP URL.
+The default ports are documented in the [command reference](reference.md), but you do not need to pass them for a normal run.
 
 ## Run the Crew
 

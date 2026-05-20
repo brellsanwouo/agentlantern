@@ -35,7 +35,7 @@ features:
 <div class="agentlantern-pill-row">
   <span class="agentlantern-pill">Multi-framework direction</span>
   <span class="agentlantern-pill">CrewAI deep support today</span>
-  <span class="agentlantern-pill">VitePress + GitHub Pages ready</span>
+  <span class="agentlantern-pill">GitHub Pages ready</span>
 </div>
 
 <div class="agentlantern-command-grid">
@@ -66,14 +66,3 @@ lantern web /path/to/my-agent-project
 lantern lint /path/to/my-agent-project
 lantern play /path/to/my-agent-project
 ```
-
-## Documentation Development
-
-This documentation site uses VitePress.
-
-```bash
-npm install
-npm run docs:dev
-```
-
-Open `http://127.0.0.1:9010`.

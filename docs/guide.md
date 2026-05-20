@@ -4,15 +4,6 @@
 
 Point it at any agent project — it detects the framework automatically, documents the architecture, checks design issues, and can visualize supported crews while they run.
 
-If you are editing this AgentLantern documentation site locally, serve it with:
-
-```bash
-npm install
-npm run docs:dev
-```
-
-Then open `http://127.0.0.1:9010`. Do not use `lantern web .` for this site; `lantern web` generates documentation for a target agent project and uses `https://localhost:9000` by default.
-
 ---
 
 ## Lantern Tools
