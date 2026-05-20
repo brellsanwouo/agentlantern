@@ -107,6 +107,88 @@
   font-weight: 650;
 }
 
+.agentlantern-frameworks {
+  margin: 22px 0 30px;
+}
+
+.agentlantern-frameworks__intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.agentlantern-frameworks__intro span {
+  color: #3841fc;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.agentlantern-frameworks__intro strong {
+  color: var(--vp-c-text-1);
+  font-size: 15px;
+}
+
+.agentlantern-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.agentlantern-framework-card {
+  display: grid;
+  grid-template-rows: 36px auto auto;
+  gap: 7px;
+  justify-items: center;
+  min-width: 0;
+  padding: 14px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  color: #111827;
+  text-align: center;
+}
+
+.agentlantern-framework-card svg {
+  width: 34px;
+  height: 34px;
+  color: #111827;
+}
+
+.agentlantern-framework-card strong {
+  overflow-wrap: anywhere;
+  color: #111827;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.agentlantern-framework-card span {
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.agentlantern-framework-card--available {
+  border-color: rgba(56, 65, 252, 0.38);
+  background: linear-gradient(180deg, rgba(56, 65, 252, 0.08), #fff 72%);
+  box-shadow: 0 12px 34px rgba(56, 65, 252, 0.12);
+}
+
+.agentlantern-framework-card--available svg {
+  color: #3841fc;
+}
+
+.agentlantern-framework-card--available span {
+  background: rgba(56, 65, 252, 0.12);
+  color: #222ae0;
+}
+
 .agentlantern-command-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -670,6 +752,14 @@
 }
 
 @media (max-width: 760px) {
+  .agentlantern-framework-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .agentlantern-framework-card {
+    padding: 12px 8px;
+  }
+
   .agentlantern-command-grid {
     grid-template-columns: 1fr;
   }
