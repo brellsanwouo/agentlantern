@@ -33,7 +33,7 @@ features:
 </div>
 
 <div class="agentlantern-version-strip">
-  <a href="./changelog">Current version: v0.1.21</a>
+  <a href="./changelog">Current version: v0.1.22</a>
   <span>CLI, Play, Replay, docs, and lint tooling</span>
 </div>
 

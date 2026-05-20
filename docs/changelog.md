@@ -2,6 +2,18 @@
 
 AgentLantern follows early-project semantic versioning: minor versions may still refine command behavior, while patch versions should stay focused on fixes, docs, and small CLI additions.
 
+## v0.1.22
+
+### Fixed
+
+- README screenshot now uses an absolute GitHub raw URL so package indexes such as PyPI can render it.
+
+### Improved
+
+- README installation commands now use the published PyPI package:
+  - `pip install agentlantern`
+  - `uv tool install agentlantern`
+
 ## v0.1.21
 
 Released from the current `main` branch.

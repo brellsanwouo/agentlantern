@@ -6,7 +6,7 @@
 [![CSS](https://img.shields.io/badge/CSS-interface-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![VitePress](https://img.shields.io/badge/VitePress-docs-646CFF?logo=vite&logoColor=white)](https://vitepress.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.21-3841fc)](https://github.com/brellsanwouo/agentlantern/releases)
+[![Version](https://img.shields.io/badge/version-0.1.22-3841fc)](https://github.com/brellsanwouo/agentlantern/releases)
 
 **GitHub:** https://github.com/brellsanwouo/agentlantern
 
@@ -14,18 +14,18 @@ AgentLantern is a CLI devtool that automatically documents multi-agent LLM syste
 
 Point it at an agent project — it detects the framework, parses the architecture, and generates a browsable documentation site. For supported frameworks it also opens a live animated playground while the crew executes.
 
-![AgentLantern Play UI showing five AI agents, thought bubbles, and a central Tool Hub](docs/assets/agentlantern-play-screenshot.jpeg)
+![AgentLantern Play UI showing five AI agents, thought bubbles, and a central Tool Hub](https://raw.githubusercontent.com/brellsanwouo/agentlantern/main/docs/assets/agentlantern-play-screenshot.jpeg)
 
 ## Install
 
 **With pip:**
 ```bash
-pip install "agentlantern @ git+https://github.com/brellsanwouo/agentlantern.git"
+pip install agentlantern
 ```
 
 **With uv (recommended — installs the `lantern` command globally):**
 ```bash
-uv tool install git+https://github.com/brellsanwouo/agentlantern.git
+uv tool install agentlantern
 ```
 
 **From source:**
