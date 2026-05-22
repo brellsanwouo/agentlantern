@@ -17,7 +17,7 @@ export default defineConfig({
     ["meta", { name: "theme-color", content: "#3841fc" }],
     ["meta", { property: "og:title", content: "AgentLantern" }],
     ["meta", { property: "og:description", content: "Developer tools for AI agent projects." }],
-    ["meta", { property: "og:image", content: `${base}assets/logo-horizontal.png` }],
+    ["meta", { property: "og:image", content: `${base}assets/logo-horizontal-2.png` }],
   ],
   markdown: {
     theme: {
@@ -26,8 +26,8 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: "/assets/logo.png",
-    siteTitle: "AgentLantern",
+    logo: "/assets/logo-horizontal-2.png",
+    siteTitle: false,
     nav: [
       { text: "Guide", link: "/guide" },
       { text: "CLI", link: "/usage" },

@@ -10,8 +10,9 @@
 }
 
 .VPNavBarTitle .logo {
-  width: 30px;
-  height: 30px;
+  width: 172px;
+  height: auto;
+  max-height: 34px;
 }
 
 .VPHomeHero .image-src {
