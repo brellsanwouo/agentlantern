@@ -9,6 +9,10 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 
+.dark {
+  --vp-home-hero-name-background: linear-gradient(110deg, #5d65ff 12%, #f8fafc 78%);
+}
+
 .VPNavBarTitle .logo {
   width: 172px;
   height: auto;
@@ -41,8 +45,9 @@
 }
 
 .dark .agentlantern-hero-mark img {
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .VPHomeHero .main {
