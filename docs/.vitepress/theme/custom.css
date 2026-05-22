@@ -19,6 +19,32 @@
   max-width: 330px;
 }
 
+.dark .VPNavBarTitle .logo,
+.dark .VPHomeHero .image-src,
+.dark .agentlantern-hero-mark img {
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.72),
+    0 16px 42px rgba(255, 255, 255, 0.1),
+    0 18px 54px rgba(56, 65, 252, 0.2);
+}
+
+.dark .VPNavBarTitle .logo {
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.dark .VPHomeHero .image-src {
+  padding: 28px;
+  border-radius: 28px;
+}
+
+.dark .agentlantern-hero-mark img {
+  padding: 10px 14px;
+  border-radius: 16px;
+}
+
 .VPHomeHero .main {
   max-width: 680px;
 }
