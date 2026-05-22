@@ -32,6 +32,7 @@ export default defineConfig({
       { text: "Guide", link: "/guide" },
       { text: "CLI", link: "/usage" },
       { text: "Play", link: "/play" },
+      { text: "Formation", link: "https://discord.gg/Ycc29yp4xQ" },
       {
         text: `v${version}`,
         items: [

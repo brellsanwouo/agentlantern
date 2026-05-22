@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: lantern play
       link: /play
+    - theme: alt
+      text: Join Discord
+      link: https://discord.gg/Ycc29yp4xQ
 
 features:
   - title: Document agent systems
@@ -34,6 +37,7 @@ features:
 
 <div class="agentlantern-version-strip">
   <a href="./changelog">Current version: v0.1.22</a>
+  <a href="https://discord.gg/Ycc29yp4xQ">Join the training Discord</a>
   <span>CLI, Play, Replay, docs, and lint tooling</span>
 </div>
 
