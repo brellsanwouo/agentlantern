@@ -133,6 +133,76 @@
   font-weight: 650;
 }
 
+.agentlantern-discord-cta {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  margin: 0 0 30px;
+  padding: 16px 18px;
+  overflow: hidden;
+  border: 1px solid rgba(88, 101, 242, 0.42);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(88, 101, 242, 0.16), rgba(56, 65, 252, 0.08)),
+    var(--vp-c-bg);
+  box-shadow: 0 18px 46px rgba(88, 101, 242, 0.16);
+  color: var(--vp-c-text-1);
+  text-decoration: none !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.agentlantern-discord-cta:hover {
+  border-color: rgba(88, 101, 242, 0.78);
+  box-shadow: 0 22px 58px rgba(88, 101, 242, 0.24);
+  transform: translateY(-1px);
+}
+
+.agentlantern-discord-cta__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #5865f2;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(88, 101, 242, 0.34);
+}
+
+.agentlantern-discord-cta__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.agentlantern-discord-cta strong,
+.agentlantern-discord-cta em {
+  display: block;
+}
+
+.agentlantern-discord-cta strong {
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.agentlantern-discord-cta em {
+  margin-top: 3px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.agentlantern-discord-cta b {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #5865f2;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .agentlantern-frameworks {
   margin: 22px 0 30px;
 }
@@ -778,6 +848,21 @@
 }
 
 @media (max-width: 760px) {
+  .agentlantern-discord-cta {
+    grid-template-columns: 44px minmax(0, 1fr);
+    padding: 14px;
+  }
+
+  .agentlantern-discord-cta__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .agentlantern-discord-cta b {
+    grid-column: 2;
+    justify-self: start;
+  }
+
   .agentlantern-framework-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
