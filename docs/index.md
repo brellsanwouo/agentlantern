@@ -31,13 +31,14 @@ features:
     details: Start, stop, replay, and inspect supported agent runs inside a pixel-art execution environment.
 ---
 
-<div class="agentlantern-hero-mark">
-  <img src="./assets/logo-horizontal.png" alt="AgentLantern" />
-</div>
-
-<div class="agentlantern-version-strip">
-  <a href="./changelog">Current version: v0.1.22</a>
-  <span>CLI, Play, Replay, docs, and lint tooling</span>
+<div class="agentlantern-product-strip">
+  <div class="agentlantern-hero-mark">
+    <img src="./assets/logo-horizontal.png" alt="AgentLantern" />
+  </div>
+  <div class="agentlantern-version-strip">
+    <a href="./changelog">Current version: v0.1.22</a>
+    <span>CLI, Play, Replay, docs, and lint tooling</span>
+  </div>
 </div>
 
 <a class="agentlantern-discord-cta" href="https://discord.gg/Ycc29yp4xQ">
